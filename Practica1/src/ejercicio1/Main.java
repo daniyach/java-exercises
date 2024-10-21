@@ -348,7 +348,6 @@ public class Main{
 
 
 
-/*Borra esta línea para resolver la parte 6
 
 
 //Parte 6:
@@ -360,11 +359,16 @@ System.out.println("----------------------");
 
 //Crea una variable del tipo int llamada e1 de valor 7 y otra llamada e2 de valor 2
 
+int e1 = 7;
+int e2 = 2;
 
 
 
 //Imprime el resultado de división, ¿Es el resultado el esperado, por qué?
 
+System.out.println(e1/e2);
+
+// Imprime el coeficiente que es 3 y es tipo int, para devolver el resto también necesitariamos el módulo.
 
 
 // ¿Puedes afirmar que el resultado obtenido es el cociente? Para ello cambia los valores asignados a e1 y e2.
@@ -373,44 +377,38 @@ System.out.println("----------------------");
 
 //Imprime el resultado de e1%e2. ¿Qué has obtenido?
 
-
+System.out.println(e1%e2);
 
 
 //Imprime la siguiente operación 1.0*e1/e2. ¿Por qué el resultado es un número real?
 
-
+System.out.println(1.0*e1/e2);
 
 //Dada las siguientes operaciones determina antes de comprobar (descomentando y ejecutando) si el resultado es int o double. Y cuál será el resultado numérico. Explica el porqué del resultado en cada caso insertado como comentario.
+
 
 
 //Descomenta todo de una vez hayas pensado las respuestas en cada caso
 
 
-/*Quitar esta línea para descomentar
-
 System.out.println("**************");
 
 
-System.out.println(e1+e2+2.5);
+System.out.println(e1+e2+2.5);	// 11.5
 
-int e3=3; System.out.println(e1+e2/e3);
+int e3=3; System.out.println(e1+e2/e3);	// 7
 
-System.out.println((e1+e2)/e3);
+System.out.println((e1+e2)/e3);	// 3
 
-double dd1=3.5; System.out.println((int)dd1);
+double dd1=3.5; System.out.println((int)dd1);	// 3
 
-System.out.println((int)dd1*3);
+System.out.println((int)dd1*3);	// 9
 
-System.out.println((int)(dd1*3));
+System.out.println((int)(dd1*3));	// 3.5 * 3 = 10.5 -> luego hace el castin = 10
 
-System.out.println(3.5*e1/8+12);
+System.out.println(3.5*e1/8+12);	// 3.5*7 = 24.5 -> 24.5/8.0=3.0625 -> 3.0625 + 12 = 15.0625
 
-System.out.println((double)e1);
-
-
-Quitar está línea también para descomentar la parte 6*/
-
-
+System.out.println((double)e1);		// 7.0
 
   }
 
