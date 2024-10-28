@@ -2,6 +2,8 @@ package tema3;
 
 import java.util.Scanner;
 
+// EJERCICIO Nº31
+
 public class ecuacion2grado {
 
 	public static void main(String[] args) {
