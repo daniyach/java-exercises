@@ -1,4 +1,4 @@
-package ejercicio2;
+	package ejercicio2;
 
 /* Práctica 1. Ejercicio 2
 
@@ -103,9 +103,6 @@ Para resolver el problema del redondeo con cierta precisión, se sugiere tener e
 
     //System.out.println("Coste por turista " + (*) + " euros"); 
 
-   
-
-   
 
   }
 
