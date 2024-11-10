@@ -10,6 +10,7 @@ public class DadoBasico {
 		int dado = (int) Math.floor(aleatorio);
 		
 		// Bloque de salida
+		System.out.println("> " + aleatorio );
 		System.out.println(">> " + dado);
 		
 	}
