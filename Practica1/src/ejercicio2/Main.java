@@ -1,7 +1,8 @@
-	package ejercicio2;
+package ejercicio2;
 
-/* Práctica 1. Ejercicio 2
+/*
 
+Práctica 1. Ejercicio 2
 
 Un grupo de turistas va a realizar una excursión para la que debe contratar un número suficiente de microbuses. 
 Se desea saber el coste por turista, suponiendo que cada microbús tiene una capacidad máxima de 8 viajeros y 
@@ -19,27 +20,22 @@ y el número de participantes (será otro número entero). El programa deberá e
     Escrito y compilado el programa, se deberá probar la corrección de los resultados calculados. 
 
 Por ejemplo, si el coste de un microbús es de 265 euros, el coste por turista en grupo de 38 persones debe dar 34.87 euros.
-
-Para resolver el problema del redondeo con cierta precisión, se sugiere tener en cuenta la siguiente consideración: Supóngase por ejemplo, que se desea redondear con 2 cifras decimales una cantidad como 34.86842105263158; se puede multiplicar la cantidad por 100 (3486.842105263158) y redondearla para eliminar los decimales no deseados (3487). A continuación basta con dividir por 100 para obtener el resultado (34.87 en el ejemplo).
+Para resolver el problema del redondeo con cierta precisión, se sugiere tener en cuenta la siguiente consideración: 
+Supóngase por ejemplo, que se desea redondear con 2 cifras decimales una cantidad como 34.86842105263158; 
+se puede multiplicar la cantidad por 100 (3486.842105263158) y redondearla para eliminar los decimales no deseados (3487). 
+A continuación basta con dividir por 100 para obtener el resultado (34.87 en el ejemplo).
 
 */
 
-  //importa el Scanner
-
- import java.util.Scanner;
+//importa el Scanner
+import java.util.Scanner;
 
   public class Main{
 
-  
-
    public static void main(String args[]){
 
-   
-
-    //Crea el teclado para leer los datos
-	   
+    //Crea el teclado para leer los datos	   
 	   Scanner tec = new Scanner(System.in);
-
 
     //***Bloque entrada de datos
 
@@ -65,7 +61,7 @@ Para resolver el problema del redondeo con cierta precisión, se sugiere tener e
     //Comprueba, por tanto, si tu instrucción evalúa adecuadamente la operación antes de seguir.
 
    
-      int numBuses = (int) Math.ceil( numTuristas / 8.0 ); // Math.ceil() te devuelve un double
+      int numBuses = (int) Math.ceil( numTuristas / 8.0 ); // Math.ceil() te devuelve un double, redondea al entero más cercano hacía arriba
       
    
 
@@ -79,7 +75,7 @@ Para resolver el problema del redondeo con cierta precisión, se sugiere tener e
 
     //Ajuste la misma variable para que el resultado sólo muestre dos decimales. Usando Math.round()
 
-      double euros = Math.round(aPagar * 100)/100.0;	// Math.round() devuelve un tipo int.
+      double euros = Math.round(aPagar * 100)/100.0;	// Math.round() devuelve un tipo int por eso dividimos por un double
       
       /*
        * Math.round()	-->	int

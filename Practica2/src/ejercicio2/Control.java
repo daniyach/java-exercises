@@ -25,9 +25,12 @@ Algoritmo a implementar
 
 Se dispone de un sensor que en función de un determinado rango de temperaturas ha de proceder a activar o desactivar un refrigerador.
 
-El programa ha de dar valor a las variables que controlen la activación o no del refrigerador, su potencia y el grado de apertura de las láminas de las ventans del techo del recinto, en función de la temperatura que indique el sensor y la franja horaria.
+El programa ha de dar valor a las variables que controlen la activación o no del refrigerador, 
+su potencia y el grado de apertura de las láminas de las ventans del techo del recinto, 
+en función de la temperatura que indique el sensor y la franja horaria.
 
-Si hay que activarlo, los valores de potencia oscilan entre 1 y 3. La apertura de las láminas oscilan entre 0 y 3, siendo 0 el estar cerradas.
+Si hay que activarlo, los valores de potencia oscilan entre 1 y 3. 
+La apertura de las láminas oscilan entre 0 y 3, siendo 0 el estar cerradas.
 
 Rangos de temperaturas que considera el sensor.
 

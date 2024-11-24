@@ -2,12 +2,9 @@ package ejercicio1;
 
 /*Práctica 2. Ejercicio1  Trabajando con estructuras de selección
 
-*/
-
-/*Programa 1:  Estructura if(){ }
+Programa 1:  Estructura if(){ }
 
 Implemente un programa que reciba una nota numérica de un alumno entre 0 y 10 y responda:
-
 Si nota=10 Matrícula de Honor
 
 Si 9<=nota<10 Sobresaliente
@@ -23,7 +20,6 @@ Si 4<=nota<5 Insuficiente
 Si 3<=nota<4 Deficiente
 
 Si nota<3 Muy Deficiente
-
 Si la nota está fuera de rango debe responder con nota numérica no valida.
 
 Sólo puede usar if(){ } (observa no hay else).

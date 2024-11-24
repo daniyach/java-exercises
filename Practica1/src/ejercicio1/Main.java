@@ -31,8 +31,8 @@ Así pues, tenemos:
   boolean               No tiene
 
 
-La creación de esta clase envolvente nos permite disponer de código adicional para realizar operaciones con este tipo de datos. Estas operaciones son métodos implementados para cada clase, así como constantes que nos permiten disponer de más capacidades la hora de programar.
-
+La creación de esta clase envolvente nos permite disponer de código adicional para realizar operaciones con este tipo de datos. 
+Estas operaciones son métodos implementados para cada clase, así como constantes que nos permiten disponer de más capacidades la hora de programar.
 La práctica consiste en conocer las constantes y métodos de interés a usar en cada tipo de dato. Así como las operaciones, conversiones de tipo , etc. sobre los datos primitivos o su equivalente clase envolvente.
 
 */
@@ -230,6 +230,7 @@ public class Main{
  System.out.println(x + str1);
 
  // ¿Por qué se obtiene 1213 en vez de dar un error? ¿Qué sucede pues?
+ 
 
  /* por que el dato de x pasa a ser String */
 
