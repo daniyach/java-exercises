@@ -67,8 +67,44 @@ public class MyMath {
 			bin = cifra + bin;// La cadena hay que pegarla por delante
 			dec = dec/base; // deplazar?
 		}
-		return bin;
+		if (dec==0) {
+			return "0";
+		}else {
+			return bin;
+		}
 		
+	}
+	
+	public static String dec2Hex(int decimal) {
+		String hex = "";
+		
+		while (decimal != 0) {
+			String cifra = decimal % 16 + "";
+			switch(cifra){
+				case "10": cifra="A"; break;
+				case "12": cifra="B"; break;
+				case "13": cifra="C"; break;
+				case "14": cifra="D"; break;
+				case "15": cifra="E"; break;
+				case "16": cifra="F"; break;
+			}
+			decimal = decimal/16;
+			hex = cifra + hex;
+		}
+		if (hex.equals("")) {
+			return "0";
+		}else {
+			return hex;
+		}
+		
+	}
+	
+	public static double factorial (int n){
+		if (n==0 || n==1){
+			return 1;
+		}else{
+			return n*factorial(n-1);
+		}
 	}
 
 }

@@ -33,6 +33,8 @@ public class Operaciones {
 		System.out.println(">> " + invertirX);
 		System.out.println(">> "+ MyMath.decimalToBinario(7));
 		System.out.println(">> "+ MyMath.decimalBaseN(7, 7));
+		System.out.println("-----------------");
+		System.out.println(">> "+ MyMath.dec2Hex(0));
 		
 		
 	}
