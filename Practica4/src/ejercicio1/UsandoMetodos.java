@@ -1,207 +1,192 @@
 package ejercicio1;
 
-/*Práctica 4. Ejercicio 1:
+/*Prï¿½ctica 4. Ejercicio 1:
 
-Métodos
+Mï¿½todos
 
 Objetivos:
 
-En esta primera práctica el alumno adquiere conocimientos:
+En esta primera prï¿½ctica el alumno adquiere conocimientos:
 
-Implementar un nuevo método para ser llamado por el método principal (main()) o por otro método.
-Declarar su cabezera y su cuerpo.
-Definir sus parámetros de entrada.
-Devolver (return) su parámetro de salida.
-Llamada a un método desde otro método, como por ejemplo el método main
-Entender el concepto de métodos sobrecargados
+- Implementar un nuevo mï¿½todo para ser llamado por el mï¿½todo principal (main()) o por otro mï¿½todo.
+- Declarar su cabezera y su cuerpo.
+- Definir sus parï¿½metros de entrada.
+- Devolver (return) su parï¿½metro de salida.
+- Llamada a un mï¿½todo desde otro mï¿½todo, como por ejemplo el mï¿½todo main
+- Entender el concepto de mï¿½todos sobrecargados
+
 Programa a realizar:
 
-Consta de 6 métodos:
+Consta de 6 mï¿½todos:
 
-Método 1:
+Mï¿½todo 1:
 
-Programe un método que reciba como parámetro de entrada un String y devuelve un entero. El método recibe un texto con el fin de solicitar un número entero por teclado. Leerá el número y lo devolverá.
+Programe un mï¿½todo que reciba como parï¿½metro de entrada un String y devuelve un entero. 
+El mï¿½todo recibe un texto con el fin de solicitar un nï¿½mero entero por teclado. 
+Leerï¿½ el nï¿½mero y lo devolverï¿½.
 
 Con la cabecera:
 
 public static int readInt(String ask)
 
-p.ej. Supongamos ask es " Introduce un número entero ". El método preguntará "Introduce un número entero:". Observa el método elimina los espacios en blanco del principio y del final y ha añadido dos puntos. Importante: Si en la pregunta ya están los dos puntos no deberá añadirlos. En definitiva estamos programando el método de Java nextInt(), pero con la diferencia que lleva integrada la pregunta a hacer.
+p.ej. Supongamos ask es " Introduce un nÃºmero entero ". El mÃ©todo preguntarÃ¡ "Introduce un nÃºmero entero:".
+Observa el mÃ©todo elimina los espacios en blanco del principio y del final y ha aÃ±adido dos puntos. 
+Importante: Si en la pregunta ya estÃ¡n los dos puntos no deberÃ¡ aÃ±adirlos. En definitiva estamos 
+programando el mÃ©todo de Java nextInt(), pero con la diferencia que lleva integrada la pregunta a hacer.
 
-Métodos 2 y 3:
+MÃ©todos 2 y 3:
 
-Igual al método uno, pero solicita un número real, del tipo double y un String.
+Igual al mÃ©todo uno, pero solicita un nÃºmero real, del tipo double y un String.
 
-public static double readDouble(String ask) Método 2
+public static double readDouble(String ask) MÃ©todo 2
 
-public static String readString(String ask) Método 3
+public static String readString(String ask) MÃ©todo 3
 
-Importante: Tras leer por teclado un dato del tipo numérico es necesario vaciar el buffer del teclado. Ya que el carácter salto de línea se queda en el buffer y los métodos nexInt(), nextDouble(), nextFloat(), etc, consideran número todo lo que hay antes del código de salto de línea. Para vaciar el buffer use tras leer el número el método nextLine(), ya que este leerá el salto de línea vaciando el buffer.
+Importante: Tras leer por teclado un dato del tipo numÃ©rico es necesario vaciar el buffer del teclado. 
+Ya que el carÃ¡cter salto de lÃ­nea se queda en el buffer y los mÃ©todos nexInt(), nextDouble(), nextFloat(), 
+etc, consideran nÃ©mero todo lo que hay antes del cÃ³digo de salto de lÃ­nea. 
+Para vaciar el buffer use tras leer el nÃºmero el mÃ©todo nextLine(), ya que este leerÃ¡ el salto de lÃ­nea
+vaciando el buffer.
 
   p.ej.
 
-      int p=kyb.nextInt();
+      int p=tec.nextInt();
 
-      kyb.nexLine(); //No se almacena lo leído en ninguna variable
+      tec.nexLine(); //No se almacena lo leÃ­do en ninguna variable
 
-Por tanto, el buffer del teclado ahora está vacío, en p ha quedado el número y nextline() ha leído el código de salto de línea (observa queno hace falta almacenar esa información en ninguna variable)
+Por tanto, el buffer del teclado ahora estÃ¡ vacÃ­o, en p ha quedado el nÃºmero y nextline() ha leÃ­do 
+el cÃ³digo de salto de lÃ­nea (observa queno hace falta almacenar esa informaciÃ³n en ninguna variable)
 
-Métodos 4,5 y 6:
+Mï¿½todos 4,5 y 6:
 
-Aplicando sobrecarga implemente tres métodos con el mismo nombre (show()). Los tres no devuelven nada (void) y los tres tienen dos parámetros de entrada, el primero es común a los tres y es un String, y el segundo es diferente, para el método 4, es un entero int, para el método 5, es un número real double y para el 6 es un String.
+Aplicando sobrecarga implemente tres mï¿½todos con el mismo nombre (show()). 
+Los tres no devuelven nada (void) y los tres tienen dos parï¿½metros de entrada, el primero es comï¿½n 
+a los tres y es un String, y el segundo es diferente, para el mï¿½todo 4, es un entero int, para el mï¿½todo 5,
+ es un nï¿½mero real double y para el 6 es un String.
 
-Los métodos 4,5,6 imprimen la cadena de texto introducida como parámetro 1 seguido del valor introducido en el parámetro 2.
+Los mï¿½todos 4,5,6 imprimen la cadena de texto introducida como parï¿½metro 1 seguido del valor introducido 
+en el parï¿½metro 2.
 
 Ejemplo:
 
-  show("El número es", 5)
+  show("El nï¿½mero es", 5)
 
-  El númeroe es: 5
+  El nï¿½meroe es: 5
 */
-
 
 import java.util.Scanner;
 
-
 class UsandoMetodos {
 
- 
+	static Scanner tec = new Scanner(System.in);
 
-  static Scanner tec = new Scanner(System.in);
+	public static void main(String[] args) {
 
- 
+		int x = readInt("  Introduce un nÃºmero entero:  ");
+		show("Valor introducido:", x);
 
-  public static void main(String[] args) {
+		double d = readDouble("Introduce un nÃºmero real");
+		show("Valor introducido:", d);
 
-    int x = readInt("Introduce un número entero");
+		String str = readString("Introduce tu nombre:   ");
+		show("Nombre:", str);
 
-    show("Valor introducido:", x);
+		str = readString("Introduce tus apellidos:   ");
+		show("Apellidos:", str);
 
-   
+	} // Fin mÃ©todo main
 
-    double d = readDouble("Introduce un número real");
+	// MÃ©todo 1
+	public static int readInt(String ask) {
 
-    show("Valor introducido:", d);
-
-   
-
-    String str = readString("Introduce tu nombre:   ");
-
-    show("Nombre:", str);
-
-   
-
-    str = readString("Introduce tus apellidos:   ");
-
-    show("Apellidos:", str);
-
- 
-
-  } //Fin método main
-
- 
-
- 
-
- 
-
-  public static int readInt(String ask){
-
-    //Programe aquí el código del método
-	  ask = ask.trim();
-	  if(!ask.endsWith(":")) {
-		ask = ask + ": ";
-	  }else {
-		  ask = ask + " ";
-	  }
-	  
-	  System.out.print(ask);
-	  int x = tec.nextInt();
-	  tec.nextLine();
-
-	  return x;
-  }
-
- 
-
-   public static double readDouble(String ask){
-
-    //Programe aquí el código del método
-
-		  ask = ask.trim();
-		  if(!ask.endsWith(":")) {
+		// Programe aquÃ­ el cÃ³digo del mÃ©todo
+		ask = ask.trim();
+		if (!ask.endsWith(":")) {
 			ask = ask + ": ";
-		  }else {
-			  ask = ask + " ";
-		  }
-		  
-		  System.out.print(ask);
-		  double x = tec.nextDouble();
-		  tec.nextLine();
+		} else {
+			ask = ask + " ";
+		}
 
-		  return x;
-  }
+		System.out.print(ask);
+		int x = tec.nextInt();
+		tec.nextLine();
 
- 
+		return x;
+	}
 
-  public static String readString(String ask){
+	// MÃ©todo 2
+	public static double readDouble(String ask) {
 
-    //Programe aquí el código del método
+		// Programe aquï¿½ el cï¿½digo del mï¿½todo
 
-	  ask = ask.trim();
-	  if(!ask.endsWith(":")) {
-		ask = ask + ": ";
-	  }else {
-		  ask = ask + " ";
-	  }
-	  
-	  System.out.print(ask);
-	  String x = tec.nextLine();
+		ask = ask.trim();
+		if (!ask.endsWith(":")) {
+			ask = ask + ": ";
+		} else {
+			ask = ask + " ";
+		}
 
-	  return x;
-  }
+		System.out.print(ask);
+		double x = tec.nextDouble();
+		tec.nextLine();
 
- 
+		return x;
+	}
 
-  //Programe a partir de aquí los métodos show aplicando sobrecarga
+	// MÃ©todo 3
+	public static String readString(String ask) {
 
+		// Programe aquï¿½ el cï¿½digo del mï¿½todo
 
-  public static void show(String ask, int a) {
-	  ask = ask.trim();
-	  if(!ask.endsWith(":")) {
-		ask = ask + ": ";
-	  }else {
-		  ask = ask + " ";
-	  }
-	  
-	  System.out.println(ask+a);
-  }
+		ask = ask.trim();
+		if (!ask.endsWith(":")) {
+			ask = ask + ": ";
+		} else {
+			ask = ask + " ";
+		}
 
-  public static void show(String ask, double a) { // esto se llama sobrecarga
-	  ask = ask.trim();
-	  if(!ask.endsWith(":")) {
-		ask = ask + ": ";
-	  }else {
-		  ask = ask + " ";
-	  }
-	  
-	  System.out.println(ask+a);
-  }
+		System.out.print(ask);
+		String x = tec.nextLine();
 
-  public static void show(String ask, String a) { // esto se llama sobrecarga
-	  ask = ask.trim();
-	  if(!ask.endsWith(":")) {
-		ask = ask + ": ";
-	  }else {
-		  ask = ask + " ";
-	  }
-	  
-	  System.out.println(ask+a);
-  }
- 
+		return x;
+	}
 
- 
+	// Programe a partir de aquï¿½ los mï¿½todos show aplicando sobrecarga
 
- 
+	// MÃ©todo 4
+	public static void show(String ask, int a) {
+		ask = ask.trim();
+		if (!ask.endsWith(":")) {
+			ask = ask + ": ";
+		} else {
+			ask = ask + " ";
+		}
+
+		System.out.println(ask + a);
+	}
+
+	// MÃ©todo 5
+	public static void show(String ask, double a) { // esto se llama sobrecarga
+		ask = ask.trim();
+		if (!ask.endsWith(":")) {
+			ask = ask + ": ";
+		} else {
+			ask = ask + " ";
+		}
+
+		System.out.println(ask + a);
+	}
+
+	// MÃ©todo 6
+	public static void show(String ask, String a) { // esto se llama sobrecarga
+		ask = ask.trim();
+		if (!ask.endsWith(":")) {
+			ask = ask + ": ";
+		} else {
+			ask = ask + " ";
+		}
+
+		System.out.println(ask + a);
+	}
 
 }
